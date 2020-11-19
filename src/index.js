@@ -1,6 +1,6 @@
 import './styles.css';
-import menuJson from './menu.json';
-import itemsTamplate from './js/templating.js';
+import menu from './menu.json';
+import items from './templates/card.hbs';
 
 const Theme = {
   LIGHT: 'light-theme',
@@ -41,7 +41,7 @@ function lookLocalStorage() {
 
 lookLocalStorage();
 
-const markup = itemsTamplate(menuJson);
+const markup = items(menu);
 
 const galleryRef = document.querySelector('.js-menu');
 galleryRef.insertAdjacentHTML('beforeend', markup);
