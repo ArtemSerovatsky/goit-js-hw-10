@@ -1,6 +1,6 @@
 import './styles.css';
 import menuJson from './menu.json';
-import itemsTamplate from './template/menu.hbs';
+import itemsTamplate from './js/templating.js';
 
 const Theme = {
   LIGHT: 'light-theme',
